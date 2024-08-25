@@ -1,0 +1,27 @@
+.friend-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 8px;
+  gap: 4px;
+}
+
+.friend-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.friend-list-item-name {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.friend-list-item-status-online {
+  color: green;
+}
+
+.friend-list-item-status-offline {
+  color: red;
+}
