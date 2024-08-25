@@ -1,10 +1,10 @@
 import Profile from '../Profile/Profile';
 import FriendList from '../FriendList/FriendList';
-// import TransactionHistory from "./components/TransactionHistory";
+import TransactionHistory from '../TransactionHistory/TransactionHistory';
 
 import userData from '../../data/userData.json';
 import friends from '../../data/friends.json';
-// import transactions from "./data/transactions.json";
+import transactions from '../../data/transactions.json';
 
 import css from './App.module.css';
 
@@ -19,7 +19,7 @@ function App() {
         stats={userData.stats}
       />
       <FriendList friends={friends} />
-      {/*<TransactionHistory items={transactions} /> */}
+      <TransactionHistory items={transactions} />
     </div>
   );
 }
