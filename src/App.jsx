@@ -1,25 +1,24 @@
-// import userData from "../userData.json";
-// import friends from "../friends.json";
-// import transactions from "../transactions.json";
+import Profile from './components/Profile/Profile';
+// import FriendList from "./components/FriendList";
+// import TransactionHistory from "./components/TransactionHistory";
 
-// import Profile from "./Profile";
-// import FriendList from "./FriendList";
-// import TransactionHistory from "./TransactionHistory";
+import userData from './data/userData.json';
+// import friends from "./data/friends.json";
+// import transactions from "./data/transactions.json";
 
-import styles from "./App.module.css";
+import css from './App.module.css';
 
 function App() {
   return (
-    <div className={styles.app}>
-      test
-      {/* <Profile
+    <div className={css.app}>
+      <Profile
         name={userData.username}
         tag={userData.tag}
         location={userData.location}
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendList friends={friends} />
+      {/*  <FriendList friends={friends} />
       <TransactionHistory items={transactions} /> */}
     </div>
   );
